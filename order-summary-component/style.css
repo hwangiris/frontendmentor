@@ -35,6 +35,7 @@ body {
 }
 img {
 	display: block;
+	width: 100%;
 }
 a.btn, button.btn {
 	font-family: inherit;
@@ -124,10 +125,6 @@ button.btn:focus {
 	background-color: var(--very-pale-blue);
 	border-radius: 10px;
 }
-.plan-body h4 {
-	margin-top: 0;
-	margin-bottom: 0;
-}
 .plan-body div {
 	color: var(--desaturated-blue);
 }
@@ -166,7 +163,7 @@ button.btn:focus {
 	.card-body h1 {
 		font-size: 1.5em;
 	}
-	.plan-body h4,
+	.plan-body strong,
 	.plan-body p {
 		font-size: 0.875em;
 	}
