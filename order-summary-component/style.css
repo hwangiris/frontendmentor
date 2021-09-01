@@ -1,0 +1,191 @@
+/*建立全域變數*/
+:root {
+	--pale-blue: hsl(225, 100%, 94%);
+	--bright-blue: hsl(245, 75%, 52%);
+	--bright-blue-opacity: hsla(245, 75%, 52%, 0.25);
+	--very-pale-blue: hsl(225, 100%, 98%);
+	--desaturated-blue: hsl(224, 23%, 55%);
+	--dark-blue: hsl(223, 47%, 23%);
+}
+body {
+	display: -ms-grid;
+	display: grid;
+	-webkit-box-pack: center;
+		-ms-flex-pack: center;
+			justify-content: center;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	padding: 25px;
+	margin: 0;
+	font-family: 'Red Hat Display', sans-serif;
+	line-height: 1.5;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeSpeed;
+	background-color: var(--pale-blue);
+	background-image: url('images/pattern-background-mobile.svg');
+	background-position: top center;
+	background-repeat: repeat no-repeat;
+}
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+}
+img {
+	display: block;
+}
+a.btn, button.btn {
+	font-family: inherit;
+	font-weight: 700;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+a.btn:focus,
+button.btn:focus {
+	outline: 0;
+}
+
+@media (min-width: 1024px) {
+	a.btn, button.btn {
+		-o-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+		-webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+		transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+	}
+}
+.card-item {
+	max-width: 450px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: #fff;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.card-body {
+	padding: 30px 25px 0;
+}
+.card-body h1 {
+	margin-top: 0;
+	margin-bottom: 0;
+	font-weight: 900;
+	line-height: 1.25;
+	text-align: center;
+}
+.card-body p {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: var(--desaturated-blue);
+	text-align: center;
+}
+.card-btn {
+	padding: 25px;
+}
+.card-btn .btn {
+	display: block;
+	width: 100%;
+	padding: 16px;
+	font-weight: 900;
+	border-radius: 10px;
+}
+.card-btn .btn + .btn {
+	margin-top: 1em;
+}
+.card-btn .btn-contained {
+	color: #fff;
+	background-color: var(--bright-blue);
+	-webkit-box-shadow: 0 1.5em 1.5em var(--bright-blue-opacity);
+			box-shadow: 0 1.5em 1.5em var(--bright-blue-opacity);
+}
+.card-btn .btn-contained:hover {
+	background-color: var(--desaturated-blue);
+}
+.card-btn .btn-text {
+	color: var(--desaturated-blue);
+}
+.card-btn .btn-text:hover {
+	color: var(--dark-blue);
+}
+.plan-item {
+	display: -ms-grid;
+	display: grid;
+	-ms-grid-columns: 50px 20px auto 20px 4rem;
+	grid-template-columns: 50px auto 4rem;
+	grid-gap: 0 20px;
+	-webkit-box-align: center;
+		-ms-flex-align: center;
+			align-items: center;
+	padding: 20px;
+	background-color: var(--very-pale-blue);
+	border-radius: 10px;
+}
+.plan-body h4 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.plan-body div {
+	color: var(--desaturated-blue);
+}
+.plan-btn button {
+	padding: 0;
+	color: var(--bright-blue);
+	font-family: inherit;
+	font-weight: 700;
+	text-decoration: underline;
+	border-width: 0;
+	background-color: transparent;
+	cursor: pointer;
+}
+.plan-btn button:hover {
+	color: var(--desaturated-blue);
+	text-decoration: none;
+}
+@media screen and (min-width: 500px) and (min-height: 740px), (max-width: 499px) and (min-height: 650px) {
+	html, body {
+		min-height: 100%;
+		height: 100%;
+	}
+}
+@media screen and (min-width: 500px) {
+	body {
+		background-image: url('images/pattern-background-desktop.svg');
+	}
+	.card-body {
+		padding: 50px 50px 0;
+	}
+	.card-btn {
+		padding: 30px 50px;
+	}
+}
+@media screen and (max-width: 499px) {
+	.card-body h1 {
+		font-size: 1.5em;
+	}
+	.plan-body h4,
+	.plan-body p {
+		font-size: 0.875em;
+	}
+}
+@media screen and (min-width: 375px) {
+	.plan-btn {
+		text-align: right;
+	}
+}
+@media screen and (max-width: 374px) {
+	.plan-item {
+		-ms-grid-columns: 50px 20px auto;
+		grid-template-columns: 50px auto;
+	}
+
+	.plan-img {
+		-ms-grid-row: 0;
+			grid-row-start: 0;
+		-ms-grid-row-span: 2;
+		grid-row-end: span 2;
+	}
+}
