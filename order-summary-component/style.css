@@ -11,11 +11,11 @@ body {
 	display: -ms-grid;
 	display: grid;
 	-webkit-box-pack: center;
-		-ms-flex-pack: center;
-			justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 	-webkit-box-align: center;
-		-ms-flex-align: center;
-			align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	padding: 25px;
 	margin: 0;
 	font-family: 'Red Hat Display', sans-serif;
@@ -31,7 +31,7 @@ body {
 }
 *, *::before, *::after {
 	-webkit-box-sizing: border-box;
-			box-sizing: border-box;
+	box-sizing: border-box;
 }
 img {
 	display: block;
@@ -101,7 +101,7 @@ button.btn:focus {
 	color: #fff;
 	background-color: var(--bright-blue);
 	-webkit-box-shadow: 0 1.5em 1.5em var(--bright-blue-opacity);
-			box-shadow: 0 1.5em 1.5em var(--bright-blue-opacity);
+	box-shadow: 0 1.5em 1.5em var(--bright-blue-opacity);
 }
 .card-btn .btn-contained:hover {
 	background-color: var(--desaturated-blue);
@@ -119,8 +119,8 @@ button.btn:focus {
 	grid-template-columns: 50px auto 4rem;
 	grid-gap: 0 20px;
 	-webkit-box-align: center;
-		-ms-flex-align: center;
-			align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
 	padding: 20px;
 	background-color: var(--very-pale-blue);
 	border-radius: 10px;
@@ -181,8 +181,23 @@ button.btn:focus {
 
 	.plan-img {
 		-ms-grid-row: 0;
-			grid-row-start: 0;
-		-ms-grid-row-span: 2;
+		grid-row-start: 0;
+		ms-grid-row-span: 2;
 		grid-row-end: span 2;
 	}
+}
+
+.attribution {
+	padding: 10px;
+	font-size: 0.75rem;
+	text-align: center;
+}
+.attribution > span {
+	display: inline-block;
+}
+.attribution a {
+	color: var(--desaturated-blue);
+}
+.attribution a:hover {
+	color: var(--dark-blue);
 }
