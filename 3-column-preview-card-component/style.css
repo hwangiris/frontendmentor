@@ -58,6 +58,11 @@ img {
 	color: var(--very-dark-cyan);
 }
 
+h1 {
+	margin: 0;
+	font-size: 0;
+}
+
 .columns {
 	max-width: 500px;
 	width: 100%;
