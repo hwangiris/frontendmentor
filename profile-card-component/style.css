@@ -25,7 +25,7 @@ body {
 	text-rendering: optimizeSpeed;
 	background-color: var(--dark-cyan);
 	background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
-	background-position: -5vh -50vh, 105vh 50vh;
+	background-position: -5vh -49vh, 49vw 49vh;
 	background-size: 100vh, 100vh;
 	background-repeat: no-repeat, no-repeat;
 }
@@ -164,7 +164,7 @@ button.btn:focus {
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
 	body {
-		background-position: -5vh -49vh, 49vw 49vh;
+		background-position: -10vh -15vh, 120% 60vh;
 	}
 }
 
