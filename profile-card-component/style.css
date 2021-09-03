@@ -1,0 +1,188 @@
+/*建立全域變數*/
+:root {
+	--dark-cyan: hsl(185, 75%, 39%);
+	--very-dark-desaturated-blue: hsl(229, 23%, 23%);
+	--dark-grayish-blue: hsl(227, 10%, 46%);
+	--dark-gray: hsl(0, 0%, 59%);
+	--dark-gray-opacity: hsla(0, 0%, 59%, 0.2);
+	--white: hsl(0, 0%, 100%);
+}
+body {
+	display: -ms-grid;
+	display: grid;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 25px;
+	margin: 0;
+	font-family: 'Kumbh Sans', sans-serif;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeSpeed;
+	background-color: var(--dark-cyan);
+	background-image: url('images/bg-pattern-top.svg'), url('images/bg-pattern-bottom.svg');
+	background-position: -5vh -50vh, 105vh 50vh;
+	background-size: 100vh, 100vh;
+	background-repeat: no-repeat, no-repeat;
+}
+*, *::before, *::after {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img {
+	display: block;
+	width: 100%;
+}
+a.btn, button.btn {
+	font-family: inherit;
+	font-weight: 700;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	-moz-appearance: none;
+	-webkit-appearance: none;
+	cursor: pointer;
+}
+a.btn:focus,
+button.btn:focus {
+	outline: 0;
+}
+@media (min-width: 1024px) {
+	a.btn, button.btn {
+		-o-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+		-webkit-transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+		transition: color 0.3s, background-color 0.3s, border-color 0.3s;
+	}
+}
+
+.attribution {
+	padding: 10px 5px 0;
+	color: var(--white);
+	font-size: 0.75rem;
+	text-align: center;
+}
+.attribution > span {
+	display: inline-block;
+}
+.attribution a {
+	color: var(--dark-grayish-blue);
+}
+.attribution a:hover {
+	color: var(--very-dark-desaturated-blue);
+}
+
+.profile-card {
+	width: 100%;
+	max-width: 350px;
+	border-radius: 1rem;
+	background-color: var(--white);
+	box-shadow: 0 8px 30px var(--dark-gray-opacity);
+	overflow: hidden;
+}
+.profile-card .card-head {
+	position: relative;
+}
+.profile-card .card-head::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 0;
+	padding-top: 40%;
+}
+.profile-card .card-head img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.profile-card .card-img {
+	position: absolute;
+    left: 50%;
+	border: 5px solid var(--white);
+	border-radius: 50%;
+	overflow: hidden;
+    transform: translate(-50%, -50%);
+}
+.profile-card .card-img img {
+	width: 75px;
+}
+.profile-card .card-body {
+	padding-top: 60px;
+	padding-bottom: 20px;
+	text-align: center;
+}
+.profile-card .card-body h1, 
+.profile-card .card-body .age {
+	display: inline-block;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-size: 1.125rem;
+	vertical-align: middle;
+}
+.profile-card .card-body .age {
+	margin-left: 5px;
+	color: var(--dark-gray);
+}
+.profile-card .card-body .place {
+	margin-top: 0.25rem;
+	color: var(--dark-gray);
+	font-size: 0.875rem;
+}
+.profile-card .card-foot {
+	padding: 20px;
+	font-size: 0;
+	text-align: center;
+	border-top: 1px solid var(--dark-gray-opacity);
+}
+.profile-card .foot-item {
+	display: inline-block;
+	width: 33%;
+	vertical-align: text-top;
+}
+.profile-card .foot-item .number {
+	font-size: 1rem;
+	font-weight: bold;
+}
+.profile-card .foot-item .label {
+	color: var(--dark-gray);
+	font-size: 0.75rem;
+	letter-spacing: 0.15em;
+	transform: scale(0.75);
+}
+
+@media screen and (orientation: portrait) {
+	body {
+		background-size: 50vh, 50vh;
+	}
+}
+
+@media screen and (min-width: 768px) and (orientation: portrait) {
+	body {
+		background-position: -10vh -15vh, 120% 60vh;
+	}
+}
+
+@media screen and (max-width: 767px) and (orientation: portrait) {
+	body {
+		background-position: -400% -10%, 500% 100%;
+	}
+}
+
+@media screen and (min-width: 375px) {
+	.profile-card .foot-item {
+		width: 90px;
+	}
+}
+
+@media screen and (min-height: 420px) {
+	html, body {
+		min-height: 100%;
+		height: 100%;
+	}
+}
