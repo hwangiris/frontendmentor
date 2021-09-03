@@ -164,7 +164,7 @@ button.btn:focus {
 
 @media screen and (min-width: 768px) and (orientation: portrait) {
 	body {
-		background-position: -10vh -15vh, 120% 60vh;
+		background-position: -5vh -49vh, 49vw 49vh;
 	}
 }
 
