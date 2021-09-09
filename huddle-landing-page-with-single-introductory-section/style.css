@@ -95,7 +95,7 @@ button:focus {
 .container-text p {
 	margin-bottom: 1.25rem;
 	font-size: 1.125rem;
-	line-height: 1.33333333;
+	line-height: 1.45;
 }
 .container-text a.btn {
 	display: inline-block;
