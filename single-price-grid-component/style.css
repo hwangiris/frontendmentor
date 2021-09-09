@@ -109,7 +109,7 @@ button.btn:focus {
 	background-color: var(--cyan);
 }
 .container-plan .price {
-	fill-size: 0;
+	font-size: 0;
 }
 .container-plan .price > * {
 	display: inline-block;
