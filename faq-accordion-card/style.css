@@ -95,7 +95,7 @@ img {
 	left: -130px;
 }
 .container-img img.desktop {
-	height: 359px;
+    width: 470px;
 	margin-left: -70px;
 }
 .container-img img.mobile {
@@ -178,7 +178,7 @@ img {
 		padding-bottom: 70px;
 		padding-right: 95px;
 		background-image: url(images/bg-pattern-desktop.svg);
-		background-position: 1380% 70%;
+		background-position: 1250% 70%;
 		background-repeat: no-repeat;
 		background-size: 105%;
 	}
