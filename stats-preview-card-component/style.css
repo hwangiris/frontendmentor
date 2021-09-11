@@ -146,7 +146,7 @@ button.btn:focus {
 	.card-item {
 		display: grid;
 		grid-template-columns: 57fr 54fr;
-		grid-template-rows: : auto auto;
+		grid-template-rows: auto auto;
 		direction: rtl;
 	    align-content: space-between;
 		max-width: 1110px;
