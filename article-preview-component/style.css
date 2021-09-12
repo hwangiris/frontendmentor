@@ -100,10 +100,10 @@ button.btn:focus {
 	display: inline-block;
 }
 .attribution a {
-	color: var(--slightly-transparent-white-60);
+	color: var(--very-dark-grayish-blue);
 }
 .attribution a:hover {
-	color: var(--slightly-transparent-white-75);
+	color: var(--desaturated-dark-blue);
 }
 
 .card-item {
